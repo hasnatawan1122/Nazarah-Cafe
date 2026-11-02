@@ -9,12 +9,12 @@ interface CoffeeCupLoaderProps {
    */
   fullScreen?: boolean;
   /**
-   * Primary title displayed below the cup.
-   * Defaults to "Brewing Something Special..."
+   * Primary brand title displayed below the cup.
+   * Defaults to "Tohfa Sweets & Nazarah Cafe"
    */
-  text?: string;
+  title?: string;
   /**
-   * Subtitle / brand slogan displayed below primary title.
+   * Subtitle / location line.
    */
   subtext?: string;
   /**
@@ -29,8 +29,8 @@ interface CoffeeCupLoaderProps {
 
 export function CoffeeCupLoader({
   fullScreen = false,
-  text = "Brewing Something Special...",
-  subtext = "Tohfa Sweets & Nazarah Cafe",
+  title = "Tohfa Sweets & Nazarah Cafe",
+  subtext = "Karkhana Bazar, Vehari",
   size = "md",
   className = "",
 }: CoffeeCupLoaderProps) {
@@ -56,7 +56,7 @@ export function CoffeeCupLoader({
     <div
       role="status"
       aria-live="polite"
-      aria-label={`${text} ${subtext}`}
+      aria-label={`${title} ${subtext}`}
       className={`flex flex-col items-center justify-center p-6 text-center select-none ${className}`}
     >
       {/* Container for the SVG Coffee Cup */}
@@ -300,13 +300,20 @@ export function CoffeeCupLoader({
         </svg>
       </div>
 
-      {/* STEP 5: COMPLETED STATE TYPOGRAPHY */}
-      <div className={`mt-6 space-y-1.5 ${prefersReducedMotion ? "" : "animate-text-reveal"}`}>
-        <h3 className="font-heading text-xl sm:text-2xl font-bold text-chocolate tracking-tight">
-          {text}
-        </h3>
+      {/* BRAND TYPOGRAPHY: Appears smoothly from left to right after 0.5s */}
+      <div
+        className={`mt-6 space-y-1.5 flex flex-col items-center justify-center text-center ${
+          prefersReducedMotion ? "" : "animate-text-slide-left"
+        }`}
+      >
+        <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-chocolate tracking-tight drop-shadow-xs flex items-center justify-center flex-wrap gap-x-2">
+          <span>Tohfa Sweets</span>
+          <span className="text-xl sm:text-2xl font-bold text-maroon">
+            &amp; Nazarah Cafe
+          </span>
+        </h2>
         {subtext && (
-          <p className="font-body text-xs sm:text-sm font-semibold tracking-widest text-maroon uppercase">
+          <p className="font-body text-xs sm:text-sm font-semibold tracking-widest text-chocolate/70 uppercase">
             {subtext}
           </p>
         )}

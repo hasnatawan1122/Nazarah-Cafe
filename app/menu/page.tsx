@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { MenuClient } from "./MenuClient";
-import { CoffeeCupLoader } from "@/components/ui/CoffeeCupLoader";
 import menuData from "@/data/menu.json";
 import { MenuItem } from "@/types/menu";
 
@@ -15,17 +14,7 @@ export default function MenuPage() {
   const items = menuData as MenuItem[];
 
   return (
-    <Suspense
-      fallback={
-        <div className="min-h-[70vh] flex items-center justify-center bg-cream">
-          <CoffeeCupLoader
-            size="md"
-            text="Brewing Something Special..."
-            subtext="Loading Digital Menu"
-          />
-        </div>
-      }
-    >
+    <Suspense fallback={<div className="min-h-screen bg-cream" />}>
       <MenuClient initialItems={items} />
     </Suspense>
   );

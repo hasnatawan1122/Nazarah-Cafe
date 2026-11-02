@@ -30,17 +30,18 @@ export function PageReloadLoader() {
     <div
       role="status"
       aria-live="polite"
-      aria-label="Brewing Something Special... Tohfa Sweets & Nazarah Cafe"
+      aria-label="Tohfa Sweets & Nazarah Cafe"
       className={`fixed inset-0 z-[100] flex items-center justify-center bg-cream transition-opacity duration-400 ease-out ${
         isFadingOut ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
       <CoffeeCupLoader
         fullScreen={false}
-        text="Brewing Something Special..."
-        subtext="Tohfa Sweets & Nazarah Cafe"
+        title="Tohfa Sweets & Nazarah Cafe"
+        subtext="Karkhana Bazar, Vehari"
         size="md"
       />
     </div>
   );
 }
+
