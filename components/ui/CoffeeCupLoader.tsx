@@ -300,10 +300,10 @@ export function CoffeeCupLoader({
         </svg>
       </div>
 
-      {/* BRAND TYPOGRAPHY: Appears smoothly from left to right after 0.5s */}
+      {/* BRAND TYPOGRAPHY: Ascends smoothly from bottom into position */}
       <div
         className={`mt-6 space-y-1.5 flex flex-col items-center justify-center text-center ${
-          prefersReducedMotion ? "" : "animate-text-slide-left"
+          prefersReducedMotion ? "" : "animate-text-ascend"
         }`}
       >
         <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-chocolate tracking-tight drop-shadow-xs flex items-center justify-center flex-wrap gap-x-2">
