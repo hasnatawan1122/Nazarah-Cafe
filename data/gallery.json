@@ -7,19 +7,19 @@
   },
   {
     "id": 2,
-    "src": "/images/gallery/gulab-jamun-platter.jpg",
+    "src": "/images/gallery/gulab-jamun-platter-v2.jpg",
     "alt": "Fresh gulab jamun arranged on a brass platter",
     "category": "Sweets"
   },
   {
     "id": 3,
-    "src": "/images/gallery/jalebi-making.jpg",
+    "src": "/images/gallery/jalebi-making-v2.jpg",
     "alt": "Hot jalebi being fried in the kitchen",
     "category": "Sweets"
   },
   {
     "id": 4,
-    "src": "/images/gallery/barfi-assortment.jpg",
+    "src": "/images/gallery/barfi-assortment-v2.jpg",
     "alt": "Assorted barfi with silver leaf and dry fruit topping",
     "category": "Sweets"
   },
@@ -55,13 +55,13 @@
   },
   {
     "id": 10,
-    "src": "/images/gallery/cream-rolls.jpg",
+    "src": "/images/gallery/cream-rolls-v2.jpg",
     "alt": "Freshly baked cream rolls with flaky pastry",
     "category": "Bakery"
   },
   {
     "id": 11,
-    "src": "/images/gallery/samosa-patties.jpg",
+    "src": "/images/gallery/samosa-patties-v2.jpg",
     "alt": "Golden samosas and chicken patties fresh from the oven",
     "category": "Bakery"
   },
@@ -79,7 +79,7 @@
   },
   {
     "id": 14,
-    "src": "/images/gallery/chai-serving.jpg",
+    "src": "/images/gallery/chai-serving-v2.jpg",
     "alt": "Doodh patti chai being poured into a cup",
     "category": "Cafe Vibe"
   },
@@ -96,4 +96,3 @@
     "category": "Sweets"
   }
 ]
-
