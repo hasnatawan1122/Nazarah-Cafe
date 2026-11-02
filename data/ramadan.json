@@ -1,0 +1,75 @@
+{
+  "title": "Grand Ramadan Iftar & Dinner Buffet",
+  "subtitle": "35+ Dishes — Tohfa Sweets & Bakers | Nazarah Cafe (Vehari Branch)",
+  "branch": "Karkhana Bazar, F Block, Vehari",
+  "timing": "Sunset (Iftar) to 08:30 PM Daily in Holy Ramadan",
+  "sourceImage": "R3.jpg",
+  "phone": "+92 323 6475550",
+  "phoneRaw": "+923236475550",
+  "reservationNote": "Limited family seating available. Advance table reservations recommended.",
+  "sections": [
+    {
+      "name": "Refreshing & Iftar Starters",
+      "icon": "Moon",
+      "items": [
+        "Premium Medjool & Aseel Dates (Khajoor)",
+        "Traditional Dahi Bhallay with Tamarind Chutney",
+        "Crispy Mix Pakoras (Potato, Palak & Onion)",
+        "Golden Fried Chicken Samosas",
+        "Assorted Cold Club & Chicken Sandwiches",
+        "Stone-Baked Mini Chicken Pizzas",
+        "Crispy Vegetable & Chicken Spring Rolls",
+        "Fresh Seasonal Sliced Fruit Platter",
+        "Desi Ghee Crisp Jalebi"
+      ]
+    },
+    {
+      "name": "Salads & Chaats",
+      "icon": "Utensils",
+      "items": [
+        "Creamy Russian Fruit & Potato Salad",
+        "Traditional Diced Kachumber Salad",
+        "Spicy Lahori Chana Chaat",
+        "Fresh Mint & Roasted Cumin Raita"
+      ]
+    },
+    {
+      "name": "Live Main Courses",
+      "icon": "Flame",
+      "items": [
+        "Special Saffron Chicken Dum Biryani",
+        "Wok-Fried Chicken Karahi in Desi Ghee",
+        "Creamy Chicken White Handi",
+        "Julienne Chicken Ginger Gravy",
+        "Slow-Cooked Beef Nihari with Bone Marrow",
+        "Traditional Daal Mash / Mutton Kunna",
+        "Wok-Tossed Chicken Chowmein Noodles",
+        "Egg & Scallion Fried Basmati Rice",
+        "Clay-Oven Tandoori Roghni Naan (Sesame)",
+        "Piping Hot Plain Tandoori Naan"
+      ]
+    },
+    {
+      "name": "Desserts & Traditional Sweets",
+      "icon": "Sparkles",
+      "items": [
+        "Slow-Simmered Shahi Kheer with Saffron",
+        "Warm Shahi Gulab Jamun",
+        "Delicate Spongy Rasgulla",
+        "Assorted Cafe Pastries & Tea Bites",
+        "Fresh Fried Golden Jalebi",
+        "Layered Fruit Custard & Jelly Trifle"
+      ]
+    },
+    {
+      "name": "Chilled Ramadan Beverages",
+      "icon": "Coffee",
+      "items": [
+        "Traditional Chilled Rooh Afza Sharbat",
+        "Freshly Squeezed Lemonade",
+        "Soda Fresh Lime",
+        "Crushed Mint Margarita"
+      ]
+    }
+  ]
+}

@@ -246,3 +246,4 @@ export function GalleryClient({ items }: GalleryClientProps) {
     </div>
   );
 }
+

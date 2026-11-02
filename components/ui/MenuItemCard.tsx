@@ -2,40 +2,39 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { ChevronDown, Utensils, Sparkles, MessageCircle } from "lucide-react";
+import { Utensils, MessageCircle, Clock, ChevronDown } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { siteConfig } from "@/config/site";
-
-export interface MenuItem {
-  id: string;
-  category: string;
-  name: string;
-  description: string;
-  price: string;
-  ingredients: string[];
-  recipe: string;
-  image?: string;
-  featured?: boolean;
-  priceNote?: string;
-}
+import { MenuItem } from "@/types/menu";
+import { MenuItemVariations } from "@/components/menu/MenuItemVariations";
 
 interface MenuItemCardProps {
   item: MenuItem;
 }
 
 export function MenuItemCard({ item }: MenuItemCardProps) {
-  const [isExpanded, setIsExpanded] = useState(false);
   const [imgError, setImgError] = useState(false);
+  const [isDetailsOpen, setIsDetailsOpen] = useState(false);
 
-  // WhatsApp order link pre-filled with this item
-  const whatsappOrderUrl = `https://wa.me/${siteConfig.phoneRaw.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-    `Hello Tohfa Sweets & Nazarah Cafe, I would like to order: ${item.name} (${item.price}). Please confirm availability.`
+  // Friendly public display for prices
+  const displayPrice = item.price
+    ? String(item.price)
+    : item.variations && item.variations.length > 0
+    ? `From ${item.variations[0].price}`
+    : "Contact for Price";
+
+  // WhatsApp order link
+  const whatsappOrderUrl = `https://wa.me/${siteConfig.phoneRaw.replace(
+    /[^0-9]/g,
+    ""
+  )}?text=${encodeURIComponent(
+    `Hello Tohfa Sweets & Nazarah Cafe, I would like to order / inquire about: ${item.name} (${displayPrice}). Please confirm availability.`
   )}`;
 
   return (
     <Card className="flex flex-col h-full overflow-hidden p-0 border-[#EEDFCD] hover:border-gold transition-all duration-300">
       {/* Image container */}
-      <div className="relative h-52 w-full overflow-hidden bg-gradient-to-br from-[#F5EAD9] to-[#EBD5BC]">
+      <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-gradient-to-br from-[#F5EAD9] to-[#EBD5BC]">
         {item.image && !imgError ? (
           <Image
             src={item.image}
@@ -47,13 +46,13 @@ export function MenuItemCard({ item }: MenuItemCardProps) {
           />
         ) : (
           <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-[#FFF5E7] to-[#EEDCC4] p-4 text-center">
-            <div className="mb-2 flex h-14 w-14 items-center justify-center rounded-full bg-gold/20 text-gold-dark shadow-inner">
-              <Utensils className="h-7 w-7" />
+            <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/20 text-gold-dark shadow-inner">
+              <Utensils className="h-6 w-6" />
             </div>
-            <span className="font-heading text-lg font-bold text-chocolate">
+            <span className="font-heading text-base font-bold text-chocolate">
               {siteConfig.shortName}
             </span>
-            <span className="text-xs text-chocolate/60 uppercase tracking-widest mt-0.5">
+            <span className="text-[10px] text-chocolate/60 uppercase tracking-widest mt-0.5">
               Fresh Daily Special
             </span>
           </div>
@@ -61,83 +60,81 @@ export function MenuItemCard({ item }: MenuItemCardProps) {
 
         {/* Category Badge */}
         <div className="absolute top-3 left-3">
-          <span className="rounded-full bg-cream/90 backdrop-blur-md px-3 py-1 text-xs font-semibold text-chocolate shadow-sm border border-gold/30">
+          <span className="rounded-full bg-cream/95 backdrop-blur-md px-3 py-1 text-[11px] font-semibold text-chocolate shadow-sm border border-gold/30">
             {item.category}
           </span>
         </div>
 
-        {/* Featured Tag */}
-        {item.featured && (
+        {/* Source image tag (discrete) */}
+        {item.sourceImage && (
           <div className="absolute top-3 right-3">
-            <span className="inline-flex items-center gap-1 rounded-full bg-maroon px-2.5 py-1 text-[11px] font-semibold text-white shadow-sm">
-              <Sparkles className="h-3 w-3" /> Special
+            <span className="rounded-md bg-chocolate/80 backdrop-blur-md px-2 py-0.5 text-[9px] font-medium text-cream/90 uppercase tracking-wider">
+              Menu Ref
             </span>
           </div>
         )}
       </div>
 
-      {/* Card Content */}
+      {/* Card Body */}
       <div className="flex flex-1 flex-col p-5">
         <div className="flex items-start justify-between gap-2 mb-2">
-          <h3 className="font-heading text-xl font-bold text-chocolate leading-snug">
+          <h3 className="font-heading text-lg sm:text-xl font-bold text-chocolate leading-snug">
             {item.name}
           </h3>
           <div className="text-right flex-shrink-0">
-            <span className="inline-block rounded-xl bg-gold/15 px-3 py-1 font-body font-bold text-sm text-gold-dark border border-gold/30">
-              {item.price}
+            <span className="inline-block rounded-xl bg-gold/15 px-3 py-1 font-body font-bold text-xs sm:text-sm text-gold-dark border border-gold/30">
+              {displayPrice}
             </span>
           </div>
         </div>
 
-        <p className="text-sm text-chocolate/75 font-body leading-relaxed mb-4 flex-1">
-          {item.description}
-        </p>
+        {/* Timing info if applicable (e.g. High Tea) */}
+        {item.timing && (
+          <div className="mb-2 flex items-center gap-1.5 text-xs text-maroon font-semibold">
+            <Clock className="h-3.5 w-3.5" />
+            <span>{item.timing}</span>
+          </div>
+        )}
 
-        {/* Expandable Recipe & Ingredients Section */}
-        <div className="border-t border-[#F0E4D4] pt-3">
-          <button
-            type="button"
-            onClick={() => setIsExpanded(!isExpanded)}
-            className="flex w-full items-center justify-between text-xs font-semibold uppercase tracking-wider text-gold-dark hover:text-chocolate transition-colors py-1"
-            aria-expanded={isExpanded}
-          >
-            <span>{isExpanded ? "Hide Recipe & Details" : "What's Inside / Recipe"}</span>
-            <ChevronDown
-              className={`h-4 w-4 transition-transform duration-300 ${
-                isExpanded ? "rotate-180" : ""
-              }`}
-            />
-          </button>
+        {/* Description */}
+        {item.description && (
+          <p className="text-xs sm:text-sm text-chocolate/75 font-body leading-relaxed mb-3 flex-1">
+            {item.description}
+          </p>
+        )}
 
-          {isExpanded && (
-            <div className="mt-3 rounded-xl bg-cream/70 p-3.5 text-xs text-chocolate/85 border border-[#EEDBCA] animate-fadeIn">
-              <div className="mb-2">
-                <span className="font-bold text-chocolate block mb-1">Key Ingredients:</span>
-                <div className="flex flex-wrap gap-1.5">
-                  {item.ingredients.map((ing, i) => (
-                    <span
-                      key={i}
-                      className="rounded-md bg-white px-2 py-0.5 text-[11px] font-medium text-chocolate/80 shadow-2xs border border-[#E9DAC8]"
-                    >
-                      {ing}
-                    </span>
-                  ))}
-                </div>
-              </div>
+        {/* Variations (Sizes & Portions) */}
+        {item.variations && item.variations.length > 0 && (
+          <MenuItemVariations variations={item.variations} />
+        )}
 
-              <div>
-                <span className="font-bold text-chocolate block mb-0.5">How It&apos;s Made:</span>
-                <p className="text-chocolate/75 leading-relaxed">{item.recipe}</p>
-              </div>
-
-              {item.priceNote && (
-                <p className="mt-2 text-[10px] text-maroon italic">
-                  Note: {item.priceNote}
-                </p>
-              )}
-            </div>
-          )}
-        </div>
+        {/* Expandable Included Items / Details if available (e.g. High Tea) */}
+        {item.itemsIncluded && item.itemsIncluded.length > 0 && (
+          <div className="mt-3 pt-2 border-t border-[#F0E4D4]">
+            <button
+              type="button"
+              onClick={() => setIsDetailsOpen(!isDetailsOpen)}
+              className="flex w-full items-center justify-between text-xs font-semibold uppercase tracking-wider text-gold-dark hover:text-chocolate py-1"
+            >
+              <span>{isDetailsOpen ? "Hide Included Items" : "View Included Items"}</span>
+              <ChevronDown
+                className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                  isDetailsOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+            {isDetailsOpen && (
+              <ul className="mt-2 space-y-1 rounded-xl bg-cream/70 p-3 text-xs text-chocolate/80 border border-[#EEDBCA]">
+                {item.itemsIncluded.map((included, i) => (
+                  <li key={i} className="flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-gold"></span>
+                    <span>{included}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
 
         {/* Order on WhatsApp Button */}
         <div className="mt-4 pt-3 border-t border-[#F0E4D4]">
@@ -145,10 +142,10 @@ export function MenuItemCard({ item }: MenuItemCardProps) {
             href={whatsappOrderUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 w-full rounded-full bg-gold text-white px-4 py-2 text-xs font-semibold hover:bg-gold-dark transition-all duration-300 shadow-soft"
+            className="flex items-center justify-center gap-2 w-full rounded-full bg-gold text-white px-4 py-2.5 text-xs font-semibold hover:bg-gold-dark transition-all duration-300 shadow-soft"
           >
             <MessageCircle className="h-4 w-4" />
-            <span>Order via WhatsApp</span>
+            <span>Order / Inquire on WhatsApp</span>
           </a>
         </div>
       </div>

@@ -104,3 +104,4 @@ vercel --prod
 - **Phone / WhatsApp**: +92 323 6475550
 - **Hours**: Opens 6:00 AM Daily (6:00 AM – 11:00 PM)
 - **Services**: Dine-In, Drive-Through, City Delivery
+

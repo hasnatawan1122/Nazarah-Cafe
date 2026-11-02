@@ -15,7 +15,8 @@ import {
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
-import { MenuItemCard, MenuItem } from "@/components/ui/MenuItemCard";
+import { MenuItemCard } from "@/components/ui/MenuItemCard";
+import { MenuItem } from "@/types/menu";
 import { TestimonialCard, TestimonialItem } from "@/components/ui/Testimonial";
 import { siteConfig } from "@/config/site";
 import menuData from "@/data/menu.json";
@@ -356,3 +357,4 @@ export default function HomePage() {
     </div>
   );
 }
+
