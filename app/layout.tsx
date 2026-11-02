@@ -4,6 +4,7 @@ import { siteConfig } from "@/config/site";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { NavigationLoader } from "@/components/providers/NavigationLoader";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -51,6 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfairDisplay.variable} ${poppins.variable}`}>
       <body className="bg-cream text-chocolate antialiased">
+        <NavigationLoader />
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
