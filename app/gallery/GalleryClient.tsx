@@ -179,10 +179,10 @@ export function GalleryClient({ items }: GalleryClientProps) {
               e.stopPropagation();
               showPrev();
             }}
-            className="absolute left-4 sm:left-8 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-cream/20 text-cream hover:bg-cream hover:text-chocolate transition-colors"
+            className="absolute left-2 sm:left-8 z-10 flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full bg-cream/20 text-cream hover:bg-cream hover:text-chocolate transition-colors"
             aria-label="Previous Image"
           >
-            <ChevronLeft className="h-6 w-6" />
+            <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
           </button>
 
           {/* Next button */}
@@ -192,18 +192,18 @@ export function GalleryClient({ items }: GalleryClientProps) {
               e.stopPropagation();
               showNext();
             }}
-            className="absolute right-4 sm:right-8 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-cream/20 text-cream hover:bg-cream hover:text-chocolate transition-colors"
+            className="absolute right-2 sm:right-8 z-10 flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full bg-cream/20 text-cream hover:bg-cream hover:text-chocolate transition-colors"
             aria-label="Next Image"
           >
-            <ChevronRight className="h-6 w-6" />
+            <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
           </button>
 
           {/* Content container */}
           <div
-            className="relative max-h-[85vh] max-w-4xl w-full flex flex-col items-center"
+            className="relative max-h-[90vh] max-w-4xl w-full flex flex-col items-center overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative h-[55vh] sm:h-[65vh] w-full overflow-hidden rounded-2xl bg-black/40 border border-cream/20 shadow-2xl">
+            <div className="relative h-[45vh] sm:h-[65vh] w-full overflow-hidden rounded-2xl bg-black/40 border border-cream/20 shadow-2xl flex-shrink-0">
               <Image
                 src={filteredItems[selectedIndex].src}
                 alt={filteredItems[selectedIndex].alt}
@@ -215,12 +215,12 @@ export function GalleryClient({ items }: GalleryClientProps) {
             </div>
 
             {/* Caption & WhatsApp inquiry */}
-            <div className="mt-4 flex flex-col sm:flex-row items-center justify-between w-full text-cream gap-4 px-2">
+            <div className="mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between w-full text-cream gap-4 px-2">
               <div>
                 <span className="rounded-md bg-gold px-2 py-0.5 text-xs font-bold text-white uppercase tracking-wider mr-2">
                   {filteredItems[selectedIndex].category}
                 </span>
-                <span className="font-heading text-lg font-bold">
+                <span className="font-heading text-base sm:text-lg font-bold">
                   {filteredItems[selectedIndex].alt}
                 </span>
                 <p className="text-xs text-cream/70 font-body mt-0.5">
@@ -234,7 +234,7 @@ export function GalleryClient({ items }: GalleryClientProps) {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-gold px-5 py-2.5 text-xs font-bold text-white hover:bg-gold-dark transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-gold px-5 py-2.5 text-xs font-bold text-white hover:bg-gold-dark transition-all"
               >
                 <MessageCircle className="h-4 w-4" />
                 <span>Inquire About This on WhatsApp</span>

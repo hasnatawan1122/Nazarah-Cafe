@@ -79,7 +79,7 @@ export function Navbar() {
           </nav>
 
           {/* Action Button: Order Now (WhatsApp) */}
-          <div className="hidden sm:flex items-center space-x-3">
+          <div className="hidden md:flex items-center space-x-3">
             <a
               href={`https://wa.me/${siteConfig.phoneRaw.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
                 "Hello Tohfa Sweets & Nazarah Cafe, I would like to place an order."
@@ -94,11 +94,11 @@ export function Navbar() {
           </div>
 
           {/* Mobile Hamburger Button */}
-          <div className="flex sm:hidden">
+          <div className="flex md:hidden">
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center rounded-xl p-2 text-chocolate hover:bg-gold/15 focus:outline-hidden"
+              className="inline-flex items-center justify-center rounded-xl p-2.5 text-chocolate hover:bg-gold/15 focus:outline-hidden"
               aria-expanded={isOpen}
               aria-label="Toggle Navigation Menu"
             >
@@ -110,7 +110,7 @@ export function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="sm:hidden border-b border-[#EEDFCD] bg-cream px-4 pt-2 pb-6 space-y-2 shadow-lg animate-fadeIn">
+        <div className="md:hidden border-b border-[#EEDFCD] bg-cream px-4 pt-2 pb-6 space-y-2 shadow-lg animate-fadeIn">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (

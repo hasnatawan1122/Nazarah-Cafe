@@ -21,7 +21,7 @@ export const siteConfig = {
   reviewCount: 85,
   developer: {
     name: "Hasnat",
-    linkedin: process.env.NEXT_PUBLIC_DEVELOPER_LINKEDIN || "https://www.linkedin.com/in/abu-ul-hasnat/",
+    linkedin: "https://www.linkedin.com/in/hasnat-awan-web-developer/",
   },
 } as const;
 

@@ -28,7 +28,19 @@
       "Fresh Lime or Mojito"
     ],
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Assembled fresh on a 3-tier platter with hot savories fried to order, artisan bakery pastries, and chilled fresh lime or mojito.",
+    "ingredients": [
+      "Shawarma Roll",
+      "Buffalo Wings",
+      "BBQ Panini",
+      "Mini Pizza",
+      "Mac & Cheese",
+      "Chicken Fingers",
+      "Sandwiches",
+      "Puff Pastry",
+      "Mojito"
+    ]
   },
   {
     "id": "hightea-three-pax",
@@ -59,7 +71,19 @@
       "Fresh Lime or Mojito"
     ],
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Generous 3-tier high-tea banquet with hot finger foods, desserts, and mint mojitos prepared for 3 guests.",
+    "ingredients": [
+      "Hot Wings",
+      "BBQ Panini",
+      "Chicken Strips",
+      "Mini Pizzas",
+      "Baked Macaroni",
+      "Cold Sandwiches",
+      "Donuts",
+      "Lotus Mousse",
+      "Mojito"
+    ]
   },
   {
     "id": "soup-chicken-corn",
@@ -70,14 +94,29 @@
     "price": "Rs. 280",
     "currency": "PKR",
     "variations": [
-      { "name": "Single Bowl", "price": "Rs. 280" },
-      { "name": "Family Bowl", "price": "Rs. 750" }
+      {
+        "name": "Single Bowl",
+        "price": "Rs. 280"
+      },
+      {
+        "name": "Family Bowl",
+        "price": "Rs. 750"
+      }
     ],
     "image": "/images/menu/soup.jpg",
     "sourceImage": "13.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Slow-cooked chicken bone broth simmered with cream-style sweet corn, finished with silken egg ribbons and white pepper.",
+    "ingredients": [
+      "Chicken Broth",
+      "Sweet Corn",
+      "Shredded Chicken",
+      "Egg Ribbons",
+      "White Pepper",
+      "Soya Sauce"
+    ]
   },
   {
     "id": "soup-hot-sour",
@@ -88,14 +127,29 @@
     "price": "Rs. 290",
     "currency": "PKR",
     "variations": [
-      { "name": "Single Bowl", "price": "Rs. 290" },
-      { "name": "Family Bowl", "price": "Rs. 780" }
+      {
+        "name": "Single Bowl",
+        "price": "Rs. 290"
+      },
+      {
+        "name": "Family Bowl",
+        "price": "Rs. 780"
+      }
     ],
     "image": "/images/menu/hot-sour-soup.jpg",
     "sourceImage": "13.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Traditional spicy Chinese chicken broth infused with chili oil, black vinegar, sliced mushrooms, and egg ribbons.",
+    "ingredients": [
+      "Chicken Stock",
+      "Black Fungus",
+      "Red Chili Paste",
+      "Aged Vinegar",
+      "Shredded Chicken",
+      "Egg Drops"
+    ]
   },
   {
     "id": "soup-cream-mushroom",
@@ -106,14 +160,29 @@
     "price": "Rs. 320",
     "currency": "PKR",
     "variations": [
-      { "name": "Single Bowl", "price": "Rs. 320" },
-      { "name": "Family Bowl", "price": "Rs. 820" }
+      {
+        "name": "Single Bowl",
+        "price": "Rs. 320"
+      },
+      {
+        "name": "Family Bowl",
+        "price": "Rs. 820"
+      }
     ],
-    "image": null,
+    "image": "/images/menu/cream-mushroom-soup.jpg",
     "sourceImage": "13.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Sliced button mushrooms sautéed in butter, simmered in chicken stock, and blended with heavy dairy cream.",
+    "ingredients": [
+      "Fresh Button Mushrooms",
+      "Butter",
+      "Heavy Dairy Cream",
+      "Garlic",
+      "Thyme",
+      "Cracked Pepper"
+    ]
   },
   {
     "id": "salad-russian",
@@ -124,11 +193,21 @@
     "price": "Rs. 420",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/salad-russian.jpg",
     "sourceImage": "13.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Boiled potato cubes, crisp apples, pineapple chunks, and peas tossed in sweet creamy mayonnaise.",
+    "ingredients": [
+      "Apples",
+      "Potatoes",
+      "Pineapple",
+      "Green Peas",
+      "Mayonnaise",
+      "Fresh Cream",
+      "Black Pepper"
+    ]
   },
   {
     "id": "salad-caesar",
@@ -139,14 +218,28 @@
     "price": "Rs. 450",
     "currency": "PKR",
     "variations": [
-      { "name": "Classic Caesar", "price": "Rs. 450" },
-      { "name": "With Grilled Chicken", "price": "Rs. 580" }
+      {
+        "name": "Classic Caesar",
+        "price": "Rs. 450"
+      },
+      {
+        "name": "With Grilled Chicken",
+        "price": "Rs. 580"
+      }
     ],
-    "image": null,
+    "image": "/images/menu/salad-caesar.jpg",
     "sourceImage": "13.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Crisp romaine and iceberg lettuce tossed with house Caesar dressing, garlic croutons, and grated parmesan.",
+    "ingredients": [
+      "Romaine Lettuce",
+      "Parmesan Cheese",
+      "Garlic Herb Croutons",
+      "Caesar Dressing",
+      "Olive Oil"
+    ]
   },
   {
     "id": "appetizer-hot-buffalo-wings",
@@ -157,14 +250,28 @@
     "price": "Rs. 480",
     "currency": "PKR",
     "variations": [
-      { "name": "6 Pieces", "price": "Rs. 480" },
-      { "name": "12 Pieces", "price": "Rs. 890" }
+      {
+        "name": "6 Pieces",
+        "price": "Rs. 480"
+      },
+      {
+        "name": "12 Pieces",
+        "price": "Rs. 890"
+      }
     ],
     "image": "/images/menu/wings.jpg",
     "sourceImage": "13.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": true
+    "featured": true,
+    "recipe": "Tender chicken wings fried extra crisp, tossed vigorously in bubbling butter and aged cayenne hot pepper glaze.",
+    "ingredients": [
+      "Chicken Wings",
+      "Cayenne Pepper Sauce",
+      "Butter",
+      "Garlic",
+      "Ranch Dip"
+    ]
   },
   {
     "id": "appetizer-honey-mustard-wings",
@@ -175,11 +282,19 @@
     "price": "Rs. 480",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/honey-mustard-wings.jpg",
     "sourceImage": "13.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Crispy fried chicken wings coated in a sticky glaze of organic honey, Dijon mustard, and cracked pepper.",
+    "ingredients": [
+      "Chicken Wings",
+      "Honey",
+      "Mustard",
+      "Soy Glaze",
+      "Black Pepper"
+    ]
   },
   {
     "id": "appetizer-chicken-fingers",
@@ -194,7 +309,15 @@
     "sourceImage": "13.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Juicy chicken breast fillets crumbed in seasoned panko crumbs, fried golden and served with honey mustard.",
+    "ingredients": [
+      "Chicken Breast Fillets",
+      "Panko Crumbs",
+      "Egg Dredge",
+      "Paprika",
+      "Honey Mustard Sauce"
+    ]
   },
   {
     "id": "appetizer-finger-fish",
@@ -205,11 +328,19 @@
     "price": "Rs. 750",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/finger-fish.jpg",
     "sourceImage": "13.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Fresh boneless fish fingers coated in seasoned breadcrumbs, fried crisp and served with zesty tartar dip.",
+    "ingredients": [
+      "Boneless Fish",
+      "Breadcrumbs",
+      "Tartar Sauce",
+      "Lemon Wedges",
+      "Black Pepper"
+    ]
   },
   {
     "id": "appetizer-cheese-balls",
@@ -220,11 +351,19 @@
     "price": "Rs. 420",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/cheese-balls.jpg",
     "sourceImage": "13.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Seasoned mozzarella and cheddar balls crumb-fried until the crust is crunchy and the center is molten.",
+    "ingredients": [
+      "Mozzarella Cheese",
+      "Cheddar",
+      "Breadcrumbs",
+      "Herbs",
+      "Spicy Dip"
+    ]
   },
   {
     "id": "pasta-fettuccine-alfredo",
@@ -239,7 +378,15 @@
     "sourceImage": "13.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": true
+    "featured": true,
+    "recipe": "Al dente fettuccine pasta tossed in a hot reduction of heavy cream, garlic, and parmesan, topped with grilled chicken.",
+    "ingredients": [
+      "Fettuccine Pasta",
+      "Heavy Cream",
+      "Parmesan",
+      "Garlic Butter",
+      "Grilled Chicken Fillet"
+    ]
   },
   {
     "id": "pasta-baked-mac-cheese",
@@ -254,7 +401,15 @@
     "sourceImage": "13.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Elbow macaroni folded into cheddar mornay sauce, transferred to a skillet, topped with breadcrumbs, and baked bubbly.",
+    "ingredients": [
+      "Elbow Macaroni",
+      "Sharp Cheddar",
+      "Mozzarella",
+      "Bechamel Sauce",
+      "Herbed Breadcrumbs"
+    ]
   },
   {
     "id": "pasta-penne-arrabbiata",
@@ -265,11 +420,20 @@
     "price": "Rs. 650",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/penne-arrabbiata.jpg",
     "sourceImage": "13.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Penne pasta simmered in an aromatic fiery reduction of crushed tomatoes, garlic, red chilies, and olive oil.",
+    "ingredients": [
+      "Penne Pasta",
+      "Crushed Plum Tomatoes",
+      "Red Chili Flakes",
+      "Garlic",
+      "Extra Virgin Olive Oil",
+      "Parmesan"
+    ]
   },
   {
     "id": "main-chicken-steak",
@@ -280,14 +444,28 @@
     "price": "Rs. 890",
     "currency": "PKR",
     "variations": [
-      { "name": "Black Pepper Sauce", "price": "Rs. 890" },
-      { "name": "Mushroom Cream Sauce", "price": "Rs. 920" }
+      {
+        "name": "Black Pepper Sauce",
+        "price": "Rs. 890"
+      },
+      {
+        "name": "Mushroom Cream Sauce",
+        "price": "Rs. 920"
+      }
     ],
-    "image": null,
+    "image": "/images/menu/chicken-steak.jpg",
     "sourceImage": "11.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": true
+    "featured": true,
+    "recipe": "Marinated chicken breast seared on a cast-iron skillet, smothered with black pepper sauce, served with fries and sautéed veggies.",
+    "ingredients": [
+      "Chicken Breast",
+      "Black Peppercorn Sauce",
+      "French Fries",
+      "Sautéed Seasonal Veggies",
+      "Butter"
+    ]
   },
   {
     "id": "main-moroccan-chicken",
@@ -298,11 +476,19 @@
     "price": "Rs. 920",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/moroccan-chicken.jpg",
     "sourceImage": "11.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Grilled chicken steak coated in a vibrant, creamy Moroccan sambal sauce, served alongside seasoned rice and fries.",
+    "ingredients": [
+      "Chicken Fillet",
+      "Moroccan Chili Sambal",
+      "Cream",
+      "Herb Basmati Rice",
+      "Fries"
+    ]
   },
   {
     "id": "chinese-chicken-manchurian",
@@ -313,14 +499,28 @@
     "price": "Rs. 750",
     "currency": "PKR",
     "variations": [
-      { "name": "A La Carte", "price": "Rs. 750" },
-      { "name": "With Egg Fried Rice", "price": "Rs. 850" }
+      {
+        "name": "A La Carte",
+        "price": "Rs. 750"
+      },
+      {
+        "name": "With Egg Fried Rice",
+        "price": "Rs. 850"
+      }
     ],
     "image": "/images/menu/manchurian.jpg",
     "sourceImage": "11.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": true
+    "featured": true,
+    "recipe": "Lightly battered fried chicken cubes tossed in a wok with garlic, ginger, spring onions, and tangy red chili sauce.",
+    "ingredients": [
+      "Chicken Cubes",
+      "Tomato Chili Sauce",
+      "Fresh Ginger & Garlic",
+      "Capsicum",
+      "Spring Onions"
+    ]
   },
   {
     "id": "chinese-kung-pao",
@@ -331,14 +531,28 @@
     "price": "Rs. 780",
     "currency": "PKR",
     "variations": [
-      { "name": "A La Carte", "price": "Rs. 780" },
-      { "name": "With Egg Fried Rice", "price": "Rs. 880" }
+      {
+        "name": "A La Carte",
+        "price": "Rs. 780"
+      },
+      {
+        "name": "With Egg Fried Rice",
+        "price": "Rs. 880"
+      }
     ],
     "image": "/images/menu/kung-pao.jpg",
     "sourceImage": "11.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Wok-fried chicken with whole dry red chilies, roasted peanuts, and bell peppers in a rich Szechuan soy reduction.",
+    "ingredients": [
+      "Chicken Cubes",
+      "Roasted Peanuts",
+      "Whole Dried Chilies",
+      "Szechuan Peppercorns",
+      "Dark Soy Sauce"
+    ]
   },
   {
     "id": "chinese-szechuan-chicken",
@@ -349,11 +563,19 @@
     "price": "Rs. 780",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/szechuan-chicken.jpg",
     "sourceImage": "11.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Spicy wok-seared chicken with julienned vegetables and spicy chili bean paste on roaring wok fire.",
+    "ingredients": [
+      "Chicken Strips",
+      "Szechuan Chili Paste",
+      "Garlic",
+      "Bell Peppers",
+      "Onions"
+    ]
   },
   {
     "id": "noodle-chicken-chowmein",
@@ -368,7 +590,17 @@
     "sourceImage": "11.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Fresh egg noodles flash-fried on wok with shredded chicken, cabbage, carrots, bell peppers, and toasted sesame oil.",
+    "ingredients": [
+      "Egg Noodles",
+      "Shredded Chicken",
+      "Cabbage",
+      "Carrots",
+      "Capsicum",
+      "Sesame Oil",
+      "Dark Soy"
+    ]
   },
   {
     "id": "noodle-veg-chowmein",
@@ -379,11 +611,19 @@
     "price": "Rs. 550",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/veg-chowmein.jpg",
     "sourceImage": "11.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Wok-tossed noodles with colorful seasonal garden vegetables, bean sprouts, and fragrant Asian aromatics.",
+    "ingredients": [
+      "Egg Noodles",
+      "Julienned Veggies",
+      "Bean Sprouts",
+      "Soy Sauce",
+      "Toasted Sesame Oil"
+    ]
   },
   {
     "id": "rice-chicken-fried-rice",
@@ -394,11 +634,20 @@
     "price": "Rs. 450",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/chicken-fried-rice.jpg",
     "sourceImage": "11.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Long-grain basmati rice stir-fried in a wok with diced chicken, scrambled eggs, carrots, and spring onions.",
+    "ingredients": [
+      "Basmati Rice",
+      "Diced Chicken",
+      "Scrambled Eggs",
+      "Carrots",
+      "Spring Onions",
+      "White Pepper"
+    ]
   },
   {
     "id": "rice-egg-fried-rice",
@@ -409,11 +658,19 @@
     "price": "Rs. 400",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/egg-fried-rice.jpg",
     "sourceImage": "11.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Steamed basmati rice tossed with farm eggs, finely chopped scallions, and light seasoning over high flame.",
+    "ingredients": [
+      "Basmati Rice",
+      "Farm Fresh Eggs",
+      "Scallions",
+      "White Pepper",
+      "Sesame Oil"
+    ]
   },
   {
     "id": "fastfood-zinger-burger",
@@ -424,14 +681,28 @@
     "price": "Rs. 490",
     "currency": "PKR",
     "variations": [
-      { "name": "Single Burger", "price": "Rs. 490" },
-      { "name": "With Fries & Drink", "price": "Rs. 690" }
+      {
+        "name": "Single Burger",
+        "price": "Rs. 490"
+      },
+      {
+        "name": "With Fries & Drink",
+        "price": "Rs. 690"
+      }
     ],
     "image": "/images/menu/burger.jpg",
     "sourceImage": "14.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Thick chicken thigh fillet marinated in buttermilk spices, flaked in double flour dredge, deep-fried extra crunchy, assembled with ice lettuce.",
+    "ingredients": [
+      "Buttermilk Battered Chicken",
+      "Iceberg Lettuce",
+      "Sesame Brioche Bun",
+      "Garlic Mayo",
+      "Fries"
+    ]
   },
   {
     "id": "fastfood-beef-burger",
@@ -442,11 +713,19 @@
     "price": "Rs. 580",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/beef-burger.jpg",
     "sourceImage": "14.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "100% seasoned beef mince patty grilled over flames, topped with melted cheddar, caramelized onions, and burger sauce.",
+    "ingredients": [
+      "Beef Mince Patty",
+      "Cheddar Cheese",
+      "Caramelized Onions",
+      "Brioche Bun",
+      "Pickles"
+    ]
   },
   {
     "id": "fastfood-club-sandwich",
@@ -457,11 +736,20 @@
     "price": "Rs. 520",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/club-sandwich.jpg",
     "sourceImage": "14.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Toasted triple-decker sandwich layered with seasoned chicken, fried egg, cheese, lettuce, and tomatoes, served with fries.",
+    "ingredients": [
+      "White Toast",
+      "Chicken Shreds",
+      "Fried Egg",
+      "Cheddar Slice",
+      "Mayonnaise",
+      "Fries"
+    ]
   },
   {
     "id": "fastfood-bbq-panini",
@@ -476,7 +764,15 @@
     "sourceImage": "14.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Ciabatta bread stuffed with shredded BBQ chicken, caramelized onions, and melted cheese, grill-pressed until crispy.",
+    "ingredients": [
+      "Ciabatta Bread",
+      "Smoked BBQ Chicken",
+      "Caramelized Onions",
+      "Cheddar Cheese",
+      "Herb Butter"
+    ]
   },
   {
     "id": "fastfood-shawarma-roll",
@@ -487,11 +783,18 @@
     "price": "Rs. 320",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/shawarma-roll.jpg",
     "sourceImage": "14.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Warm flatbread wrapped around spiced chicken tikka strips, cucumber pickles, and garlic sauce.",
+    "ingredients": [
+      "Flatbread",
+      "Chicken Tikka",
+      "Pickled Cucumbers",
+      "Garlic Mayo Sauce"
+    ]
   },
   {
     "id": "pizza-tikka-delight",
@@ -502,15 +805,33 @@
     "price": "Rs. 1150",
     "currency": "PKR",
     "variations": [
-      { "name": "Small (7\")", "price": "Rs. 550" },
-      { "name": "Medium (10\")", "price": "Rs. 1150" },
-      { "name": "Large (13\")", "price": "Rs. 1650" }
+      {
+        "name": "Small (7\")",
+        "price": "Rs. 550"
+      },
+      {
+        "name": "Medium (10\")",
+        "price": "Rs. 1150"
+      },
+      {
+        "name": "Large (13\")",
+        "price": "Rs. 1650"
+      }
     ],
     "image": "/images/menu/pizza.jpg",
     "sourceImage": "14.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Hand-stretched dough topped with smoky charcoal-grilled chicken tikka, red onions, capsicum, and 100% mozzarella, stone-baked at 350°C.",
+    "ingredients": [
+      "Fermented Pizza Dough",
+      "Charcoal Chicken Tikka",
+      "Marinara Sauce",
+      "100% Mozzarella",
+      "Onions",
+      "Capsicum"
+    ]
   },
   {
     "id": "pizza-fajita-delight",
@@ -521,15 +842,32 @@
     "price": "Rs. 1150",
     "currency": "PKR",
     "variations": [
-      { "name": "Small (7\")", "price": "Rs. 550" },
-      { "name": "Medium (10\")", "price": "Rs. 1150" },
-      { "name": "Large (13\")", "price": "Rs. 1650" }
+      {
+        "name": "Small (7\")",
+        "price": "Rs. 550"
+      },
+      {
+        "name": "Medium (10\")",
+        "price": "Rs. 1150"
+      },
+      {
+        "name": "Large (13\")",
+        "price": "Rs. 1650"
+      }
     ],
-    "image": null,
+    "image": "/images/menu/pizza-fajita.jpg",
     "sourceImage": "14.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Stone-baked crust topped with spiced Mexican fajita chicken, sweet corn, bell peppers, and bubbling mozzarella.",
+    "ingredients": [
+      "Pizza Dough",
+      "Fajita Spiced Chicken",
+      "Bell Peppers",
+      "Sweet Corn",
+      "Mozzarella"
+    ]
   },
   {
     "id": "pizza-supreme-delight",
@@ -540,15 +878,33 @@
     "price": "Rs. 1250",
     "currency": "PKR",
     "variations": [
-      { "name": "Small (7\")", "price": "Rs. 600" },
-      { "name": "Medium (10\")", "price": "Rs. 1250" },
-      { "name": "Large (13\")", "price": "Rs. 1750" }
+      {
+        "name": "Small (7\")",
+        "price": "Rs. 600"
+      },
+      {
+        "name": "Medium (10\")",
+        "price": "Rs. 1250"
+      },
+      {
+        "name": "Large (13\")",
+        "price": "Rs. 1750"
+      }
     ],
-    "image": null,
+    "image": "/images/menu/pizza-supreme.jpg",
     "sourceImage": "14.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Loaded with chicken tikka, smoked sausages, mushrooms, black olives, onions, and double mozzarella cheese.",
+    "ingredients": [
+      "Pizza Dough",
+      "Chicken Tikka",
+      "Smoked Sausages",
+      "Mushrooms",
+      "Black Olives",
+      "Mozzarella"
+    ]
   },
   {
     "id": "pizza-crown-crust",
@@ -559,14 +915,28 @@
     "price": "Rs. 1350",
     "currency": "PKR",
     "variations": [
-      { "name": "Medium (10\")", "price": "Rs. 1350" },
-      { "name": "Large (13\")", "price": "Rs. 1850" }
+      {
+        "name": "Medium (10\")",
+        "price": "Rs. 1350"
+      },
+      {
+        "name": "Large (13\")",
+        "price": "Rs. 1850"
+      }
     ],
-    "image": null,
+    "image": "/images/menu/pizza-crown.jpg",
     "sourceImage": "14.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Signature handcrafted pizza with kebab & cheese stuffed crown pockets along the crust, loaded with spicy chicken.",
+    "ingredients": [
+      "Crown Dough with Kebab Pockets",
+      "Spiced Chicken",
+      "Mozzarella",
+      "Onions",
+      "Olives"
+    ]
   },
   {
     "id": "desert-molten-lava",
@@ -581,7 +951,14 @@
     "sourceImage": "14.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Individual dark chocolate sponge baked at high heat so the perimeter sets while the center flows with warm liquid chocolate.",
+    "ingredients": [
+      "Belgian Dark Chocolate",
+      "Butter",
+      "Eggs",
+      "Vanilla Ice Cream Scoop"
+    ]
   },
   {
     "id": "desert-lotus-mousse",
@@ -596,7 +973,14 @@
     "sourceImage": "14.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Airy whipped Biscoff speculoos mousse layered over buttery biscuit crumble, topped with warm Lotus spread.",
+    "ingredients": [
+      "Lotus Biscoff Spread",
+      "Biscoff Biscuit Crumbs",
+      "Whipping Cream",
+      "Cream Cheese"
+    ]
   },
   {
     "id": "desert-brownie-icecream",
@@ -607,11 +991,18 @@
     "price": "Rs. 520",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/brownie-icecream.jpg",
     "sourceImage": "14.png",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Fudgy chocolate brownie served on a piping hot cast-iron sizzler, crowned with vanilla gelato and chocolate fudge sauce.",
+    "ingredients": [
+      "Dark Chocolate Brownie",
+      "Walnuts",
+      "Vanilla Gelato",
+      "Hot Fudge Sauce"
+    ]
   },
   {
     "id": "lassi-sweet",
@@ -622,14 +1013,27 @@
     "price": "Rs. 180",
     "currency": "PKR",
     "variations": [
-      { "name": "Sweet Lassi", "price": "Rs. 180" },
-      { "name": "Salted Lassi", "price": "Rs. 180" }
+      {
+        "name": "Sweet Lassi",
+        "price": "Rs. 180"
+      },
+      {
+        "name": "Salted Lassi",
+        "price": "Rs. 180"
+      }
     ],
     "image": "/images/menu/lassi.jpg",
     "sourceImage": "4.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Fresh whole-milk buffalo curd hand-churned with chilled milk and sugar, poured tall and topped with a thick dollop of malai.",
+    "ingredients": [
+      "Fresh Buffalo Yogurt",
+      "Chilled Milk",
+      "Sugar",
+      "Pure Milk Malai"
+    ]
   },
   {
     "id": "lassi-mango",
@@ -640,11 +1044,19 @@
     "price": "Rs. 240",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/lassi-mango.jpg",
     "sourceImage": "4.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Thick chilled yogurt blended with sweet ripe mango pulp, served ice-cold with cream.",
+    "ingredients": [
+      "Fresh Yogurt",
+      "Sweet Mango Pulp",
+      "Milk",
+      "Crushed Ice",
+      "Cream"
+    ]
   },
   {
     "id": "lassi-special-malai",
@@ -655,11 +1067,18 @@
     "price": "Rs. 250",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/lassi-malai.jpg",
     "sourceImage": "4.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Vehari specialty lassi made with slow-simmered milk curd, churned and crowned with clotted cream and crushed pistachios.",
+    "ingredients": [
+      "Thick Milk Curd",
+      "Clotted Cream (Malai)",
+      "Crushed Pistachios & Almonds",
+      "Sugar"
+    ]
   },
   {
     "id": "boba-brown-sugar",
@@ -674,7 +1093,14 @@
     "sourceImage": "4.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Chewy black tapioca pearls simmered in caramelized Taiwanese muscovado sugar syrup, poured with ice and cold full-cream milk.",
+    "ingredients": [
+      "Tapioca Pearls",
+      "Brown Sugar Syrup",
+      "Chilled Whole Milk",
+      "Cream Float"
+    ]
   },
   {
     "id": "boba-taro",
@@ -685,11 +1111,18 @@
     "price": "Rs. 480",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/boba-taro.jpg",
     "sourceImage": "4.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Sweet purple taro root milk drink served with ice and chewy brown sugar boba pearls.",
+    "ingredients": [
+      "Taro Root Base",
+      "Tapioca Pearls",
+      "Cold Fresh Milk",
+      "Ice"
+    ]
   },
   {
     "id": "boba-matcha",
@@ -700,11 +1133,18 @@
     "price": "Rs. 480",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/boba-matcha.jpg",
     "sourceImage": "4.png",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Premium Japanese green tea matcha whisked with cold milk, served over chewy sweetened tapioca pearls.",
+    "ingredients": [
+      "Ceremonial Matcha",
+      "Tapioca Pearls",
+      "Cold Milk",
+      "Sweet Syrup"
+    ]
   },
   {
     "id": "drink-mint-margarita",
@@ -715,11 +1155,19 @@
     "price": "Rs. 320",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/mint-margarita.jpg",
     "sourceImage": "8.jpg",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Fresh spearmint leaves muddled with fresh lemon juice, black salt, crushed ice, and lemon-lime soda.",
+    "ingredients": [
+      "Fresh Garden Mint",
+      "Lemon Juice",
+      "Black Salt (Kala Namak)",
+      "Crushed Ice",
+      "Soda"
+    ]
   },
   {
     "id": "drink-blue-colada",
@@ -730,11 +1178,18 @@
     "price": "Rs. 350",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/blue-colada.jpg",
     "sourceImage": "8.jpg",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Pineapple juice, coconut cream, and blue curacao syrup blended with crushed ice for a tropical refresh.",
+    "ingredients": [
+      "Blue Curacao Syrup",
+      "Pineapple Juice",
+      "Coconut Cream",
+      "Crushed Ice"
+    ]
   },
   {
     "id": "drink-oreo-shake",
@@ -745,11 +1200,18 @@
     "price": "Rs. 360",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/oreo-shake.jpg",
     "sourceImage": "8.jpg",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Real Oreo cookies blended with rich vanilla ice cream, whole milk, and dark chocolate drizzle.",
+    "ingredients": [
+      "Oreo Cookies",
+      "Vanilla Ice Cream",
+      "Whole Milk",
+      "Chocolate Drizzle"
+    ]
   },
   {
     "id": "coffee-espresso",
@@ -760,14 +1222,25 @@
     "price": "Rs. 240",
     "currency": "PKR",
     "variations": [
-      { "name": "Single Shot", "price": "Rs. 240" },
-      { "name": "Double Shot", "price": "Rs. 340" }
+      {
+        "name": "Single Shot",
+        "price": "Rs. 240"
+      },
+      {
+        "name": "Double Shot",
+        "price": "Rs. 340"
+      }
     ],
-    "image": null,
+    "image": "/images/menu/espresso.jpg",
     "sourceImage": "8.jpg",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "A concentrated shot of freshly roasted Arabica beans pulled under 9 bars of pressure with a thick crema.",
+    "ingredients": [
+      "Freshly Ground Arabica Beans",
+      "Filtered Water"
+    ]
   },
   {
     "id": "coffee-cappuccino",
@@ -778,11 +1251,18 @@
     "price": "Rs. 360",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/cappuccino.jpg",
     "sourceImage": "8.jpg",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Equal parts freshly pulled espresso, velvety steamed whole milk, and dense micro-foam, dusted with Dutch cocoa.",
+    "ingredients": [
+      "Espresso Shot",
+      "Steamed Milk",
+      "Dense Microfoam",
+      "Cocoa Powder"
+    ]
   },
   {
     "id": "coffee-iced-caramel-macchiato",
@@ -797,7 +1277,15 @@
     "sourceImage": "8.jpg",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": false
+    "featured": false,
+    "recipe": "Chilled milk and vanilla bean syrup over ice, marked with a freshly extracted double espresso and caramel drizzle.",
+    "ingredients": [
+      "Double Espresso Shot",
+      "Cold Milk",
+      "Vanilla Syrup",
+      "Caramel Drizzle",
+      "Ice"
+    ]
   },
   {
     "id": "tea-doodh-patti",
@@ -808,14 +1296,27 @@
     "price": "Rs. 70",
     "currency": "PKR",
     "variations": [
-      { "name": "Regular Cup", "price": "Rs. 70" },
-      { "name": "Karak Cup", "price": "Rs. 80" }
+      {
+        "name": "Regular Cup",
+        "price": "Rs. 70"
+      },
+      {
+        "name": "Karak Cup",
+        "price": "Rs. 80"
+      }
     ],
     "image": "/images/menu/chai.jpg",
     "sourceImage": "8.jpg",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Strong loose black tea leaves simmered and aerated directly in boiling whole milk with crushed cardamom pods.",
+    "ingredients": [
+      "Black Tea Leaves",
+      "Pure Buffalo Milk",
+      "Green Cardamom Pods",
+      "Sugar"
+    ]
   },
   {
     "id": "tea-kashmiri-pink",
@@ -826,11 +1327,19 @@
     "price": "Rs. 120",
     "currency": "PKR",
     "variations": [],
-    "image": null,
+    "image": "/images/menu/kashmiri-chai.jpg",
     "sourceImage": "8.jpg",
     "isRamadanSpecial": false,
     "needsConfirmation": true,
-    "featured": false
+    "featured": false,
+    "recipe": "Slow-brewed green tea leaves aerated with baking soda and cold water until ruby pink, simmered with milk and nuts.",
+    "ingredients": [
+      "Kashmiri Tea Leaves",
+      "Cold Water & Soda aeration",
+      "Whole Milk",
+      "Cardamom",
+      "Crushed Almonds & Pistachios"
+    ]
   },
   {
     "id": "mithai-gulab-jamun",
@@ -841,14 +1350,29 @@
     "price": "Rs. 600/kg",
     "currency": "PKR",
     "variations": [
-      { "name": "1/2 kg Box", "price": "Rs. 300" },
-      { "name": "1 kg Box", "price": "Rs. 600" }
+      {
+        "name": "1/2 kg Box",
+        "price": "Rs. 300"
+      },
+      {
+        "name": "1 kg Box",
+        "price": "Rs. 600"
+      }
     ],
     "image": "/images/menu/gulab-jamun.jpg",
     "sourceImage": "counter-board",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Fresh khoya and chhena dough rolled into spheres, slow-fried in pure ghee until mahogany brown, soaked in rose cardamom syrup.",
+    "ingredients": [
+      "Pure Khoya",
+      "Chhena Paneer",
+      "Desi Ghee",
+      "Rose Water",
+      "Cardamom",
+      "Sugar Syrup"
+    ]
   },
   {
     "id": "mithai-kaju-barfi",
@@ -859,14 +1383,27 @@
     "price": "Rs. 2400/kg",
     "currency": "PKR",
     "variations": [
-      { "name": "1/2 kg Box", "price": "Rs. 1200" },
-      { "name": "1 kg Box", "price": "Rs. 2400" }
+      {
+        "name": "1/2 kg Box",
+        "price": "Rs. 1200"
+      },
+      {
+        "name": "1 kg Box",
+        "price": "Rs. 2400"
+      }
     ],
     "image": "/images/menu/kaju-barfi.jpg",
     "sourceImage": "counter-board",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Stone-ground cashew nuts cooked with single-string sugar syrup and desi ghee, rolled thin and finished with pure silver warq.",
+    "ingredients": [
+      "Goa Cashews",
+      "Sugar Syrup",
+      "Desi Ghee",
+      "Edible Silver Leaf"
+    ]
   },
   {
     "id": "mithai-jalebi",
@@ -877,14 +1414,27 @@
     "price": "Rs. 500/kg",
     "currency": "PKR",
     "variations": [
-      { "name": "1/2 kg", "price": "Rs. 250" },
-      { "name": "1 kg", "price": "Rs. 500" }
+      {
+        "name": "1/2 kg",
+        "price": "Rs. 250"
+      },
+      {
+        "name": "1 kg",
+        "price": "Rs. 500"
+      }
     ],
     "image": "/images/menu/jalebi.jpg",
     "sourceImage": "counter-board",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Fermented batter piped into bubbling desi ghee in concentric circles, fried crispy and steeped in warm saffron sugar nectar.",
+    "ingredients": [
+      "Fermented Flour Batter",
+      "Pure Desi Ghee",
+      "Saffron Strands",
+      "Cardamom Sugar Syrup"
+    ]
   },
   {
     "id": "bakery-chicken-patties",
@@ -899,7 +1449,14 @@
     "sourceImage": "counter-board",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Laminated puff pastry dough stuffed with creamy shredded pepper chicken, baked until high, flaky, and golden.",
+    "ingredients": [
+      "Laminated Puff Pastry",
+      "Shredded Chicken Breast",
+      "White Pepper Sauce",
+      "Egg Wash"
+    ]
   },
   {
     "id": "bakery-cream-roll",
@@ -914,7 +1471,14 @@
     "sourceImage": "counter-board",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Puff pastry ribbon wrapped around steel horn moulds, rolled in sugar, baked crisp, and filled with sweet whipped vanilla cream.",
+    "ingredients": [
+      "Puff Pastry Horn",
+      "Sugar Crystals",
+      "Sweet Whipped Cream",
+      "Vanilla"
+    ]
   },
   {
     "id": "cakes-chocolate-truffle",
@@ -925,14 +1489,27 @@
     "price": "Rs. 2500/2 lbs",
     "currency": "PKR",
     "variations": [
-      { "name": "2 lbs", "price": "Rs. 2500" },
-      { "name": "Custom Weight", "price": "Contact" }
+      {
+        "name": "2 lbs",
+        "price": "Rs. 2500"
+      },
+      {
+        "name": "Custom Weight",
+        "price": "Contact"
+      }
     ],
     "image": "/images/menu/chocolate-cake.jpg",
     "sourceImage": "counter-board",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Three layers of moist chocolate buttermilk sponge filled and frosted with dark Belgian chocolate ganache.",
+    "ingredients": [
+      "Cocoa Sponge",
+      "Belgian Dark Chocolate Ganache",
+      "Buttercream",
+      "Chocolate Shards"
+    ]
   },
   {
     "id": "cakes-red-velvet",
@@ -947,7 +1524,14 @@
     "sourceImage": "counter-board",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Velvety cocoa-buttermilk red sponge layered with smooth Philadelphia-style cream cheese frosting and red sponge crumbs.",
+    "ingredients": [
+      "Red Velvet Sponge",
+      "Philadelphia Cream Cheese",
+      "Buttercream",
+      "Vanilla Bean"
+    ]
   },
   {
     "id": "giftbox-royal-mithai",
@@ -958,15 +1542,32 @@
     "price": "Rs. 2500/box",
     "currency": "PKR",
     "variations": [
-      { "name": "Classic 1 kg Box", "price": "Rs. 1500" },
-      { "name": "Royal Velvet Box", "price": "Rs. 2500" },
-      { "name": "Dry Fruit Deluxe", "price": "Rs. 3500" }
+      {
+        "name": "Classic 1 kg Box",
+        "price": "Rs. 1500"
+      },
+      {
+        "name": "Royal Velvet Box",
+        "price": "Rs. 2500"
+      },
+      {
+        "name": "Dry Fruit Deluxe",
+        "price": "Rs. 3500"
+      }
     ],
     "image": "/images/menu/gift-box-premium.jpg",
     "sourceImage": "counter-board",
     "isRamadanSpecial": false,
     "needsConfirmation": false,
-    "featured": true
+    "featured": true,
+    "recipe": "Curated assortment of the day fresh mithai, individually cradled in gold cups inside a royal velvet presentation box.",
+    "ingredients": [
+      "Assorted Barfi",
+      "Gulab Jamun",
+      "Motichoor Laddu",
+      "Pista Sweets",
+      "Roasted Dry Fruits"
+    ]
   },
   {
     "id": "ramadan-iftar-buffet",
@@ -1017,6 +1618,20 @@
       "Mint Margarita"
     ],
     "needsConfirmation": true,
-    "featured": true
+    "featured": true,
+    "recipe": "Over 35 traditional and continental delicacies prepared fresh daily for the sunset Iftar adhan in Vehari.",
+    "ingredients": [
+      "Dates",
+      "Dahi Bhallay",
+      "Pakoras",
+      "Biryani",
+      "Nihari",
+      "Karahi",
+      "White Handi",
+      "Roghni Naan",
+      "Kheer",
+      "Jalebi",
+      "Rooh Afza"
+    ]
   }
 ]

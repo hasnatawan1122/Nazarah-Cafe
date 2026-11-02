@@ -18,6 +18,8 @@ export interface MenuItem {
   timing?: string | null;
   servingSize?: string | null;
   itemsIncluded?: string[];
+  ingredients?: string[];
+  recipe?: string | null;
   needsConfirmation?: boolean;
   featured?: boolean;
 }
@@ -26,4 +28,3 @@ export interface RamadanCategoryGroup {
   name: string;
   items: string[];
 }
-

@@ -108,7 +108,7 @@ export function ContactForm() {
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             placeholder="e.g. Tariq Mehmood"
-            className={`w-full rounded-xl border bg-cream/40 px-4 py-2.5 text-sm text-chocolate placeholder:text-chocolate/40 focus:outline-hidden focus:ring-1 ${
+            className={`w-full rounded-xl border bg-cream/40 px-4 py-2.5 text-base sm:text-sm text-chocolate placeholder:text-chocolate/40 focus:outline-hidden focus:ring-1 ${
               errors.name ? "border-maroon focus:ring-maroon" : "border-[#DDCBB5] focus:ring-gold"
             }`}
           />
@@ -130,7 +130,7 @@ export function ContactForm() {
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             placeholder="e.g. 0323 1234567"
-            className={`w-full rounded-xl border bg-cream/40 px-4 py-2.5 text-sm text-chocolate placeholder:text-chocolate/40 focus:outline-hidden focus:ring-1 ${
+            className={`w-full rounded-xl border bg-cream/40 px-4 py-2.5 text-base sm:text-sm text-chocolate placeholder:text-chocolate/40 focus:outline-hidden focus:ring-1 ${
               errors.phone ? "border-maroon focus:ring-maroon" : "border-[#DDCBB5] focus:ring-gold"
             }`}
           />
@@ -152,7 +152,7 @@ export function ContactForm() {
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             placeholder="e.g. tariq@gmail.com"
-            className={`w-full rounded-xl border bg-cream/40 px-4 py-2.5 text-sm text-chocolate placeholder:text-chocolate/40 focus:outline-hidden focus:ring-1 ${
+            className={`w-full rounded-xl border bg-cream/40 px-4 py-2.5 text-base sm:text-sm text-chocolate placeholder:text-chocolate/40 focus:outline-hidden focus:ring-1 ${
               errors.email ? "border-maroon focus:ring-maroon" : "border-[#DDCBB5] focus:ring-gold"
             }`}
           />
@@ -174,7 +174,7 @@ export function ContactForm() {
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             placeholder="Tell us what you'd like to order, or ask about custom cakes, party catering, and table bookings..."
-            className={`w-full rounded-xl border bg-cream/40 px-4 py-2.5 text-sm text-chocolate placeholder:text-chocolate/40 focus:outline-hidden focus:ring-1 ${
+            className={`w-full rounded-xl border bg-cream/40 px-4 py-2.5 text-base sm:text-sm text-chocolate placeholder:text-chocolate/40 focus:outline-hidden focus:ring-1 ${
               errors.message ? "border-maroon focus:ring-maroon" : "border-[#DDCBB5] focus:ring-gold"
             }`}
           />

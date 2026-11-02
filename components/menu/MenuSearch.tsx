@@ -26,7 +26,7 @@ export function MenuSearch({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder="Search items, categories, or variations..."
-          className="w-full rounded-full border border-[#DDCBB5] bg-white pl-10 pr-10 py-2.5 text-sm text-chocolate placeholder:text-chocolate/40 focus:border-gold focus:outline-hidden focus:ring-1 focus:ring-gold transition-colors"
+          className="w-full rounded-full border border-[#DDCBB5] bg-white pl-10 pr-10 py-2.5 text-base sm:text-sm text-chocolate placeholder:text-chocolate/40 focus:border-gold focus:outline-hidden focus:ring-1 focus:ring-gold transition-colors"
         />
         {value && (
           <button
