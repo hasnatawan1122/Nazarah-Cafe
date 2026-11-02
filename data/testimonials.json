@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "name": "Ahmed R.",
+    "rating": 4,
+    "text": "Best gulab jamun in Vehari, hands down. My family orders a box every Friday for weekend chai. Fresh, soft, and perfectly sweet.",
+    "date": "2024-10-15"
+  },
+  {
+    "id": 2,
+    "name": "Fatima K.",
+    "rating": 4,
+    "text": "We got our wedding mithai boxes from Tohfa Sweets and every guest complimented the quality. The packaging was beautiful too. Highly recommend for events!",
+    "date": "2024-09-22"
+  },
+  {
+    "id": 3,
+    "name": "Usman T.",
+    "rating": 3,
+    "text": "Good bakery items, especially the cream rolls and patties. The cafe food is decent too. Chai is excellent. Could improve the seating area though.",
+    "date": "2024-08-10"
+  },
+  {
+    "id": 4,
+    "name": "Ayesha M.",
+    "rating": 4,
+    "text": "Ordered a red velvet cake for my daughter's birthday and it was stunning! Tasted as good as it looked. Delivery was on time. Will order again.",
+    "date": "2024-11-01"
+  },
+  {
+    "id": 5,
+    "name": "Bilal S.",
+    "rating": 3,
+    "text": "The biryani is really flavourful and the portion size is generous. Naan is always fresh from the tandoor. A great spot for a quick lunch in Karkhana Bazar.",
+    "date": "2024-07-30"
+  },
+  {
+    "id": 6,
+    "name": "Sana A.",
+    "rating": 3,
+    "text": "Lovely sweets and the staff is friendly. The drive-through is really convenient when I'm picking up kids from school. Jalebi is always crispy and fresh.",
+    "date": "2024-06-18"
+  }
+]
+

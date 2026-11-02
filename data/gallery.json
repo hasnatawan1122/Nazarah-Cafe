@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "src": "/images/gallery/mithai-display.jpg",
+    "alt": "Colourful mithai display at Tohfa Sweets counter",
+    "category": "Sweets"
+  },
+  {
+    "id": 2,
+    "src": "/images/gallery/gulab-jamun-platter.jpg",
+    "alt": "Fresh gulab jamun arranged on a brass platter",
+    "category": "Sweets"
+  },
+  {
+    "id": 3,
+    "src": "/images/gallery/jalebi-making.jpg",
+    "alt": "Hot jalebi being fried in the kitchen",
+    "category": "Sweets"
+  },
+  {
+    "id": 4,
+    "src": "/images/gallery/barfi-assortment.jpg",
+    "alt": "Assorted barfi with silver leaf and dry fruit topping",
+    "category": "Sweets"
+  },
+  {
+    "id": 5,
+    "src": "/images/gallery/chocolate-cake-slice.jpg",
+    "alt": "Rich chocolate truffle cake slice on a white plate",
+    "category": "Cakes"
+  },
+  {
+    "id": 6,
+    "src": "/images/gallery/red-velvet.jpg",
+    "alt": "Red velvet cake with cream cheese frosting",
+    "category": "Cakes"
+  },
+  {
+    "id": 7,
+    "src": "/images/gallery/custom-wedding-cake.jpg",
+    "alt": "Three-tier custom wedding cake with fondant flowers",
+    "category": "Cakes"
+  },
+  {
+    "id": 8,
+    "src": "/images/gallery/birthday-cakes.jpg",
+    "alt": "Colourful birthday cakes in the display counter",
+    "category": "Cakes"
+  },
+  {
+    "id": 9,
+    "src": "/images/gallery/bakery-counter.jpg",
+    "alt": "Fresh bakery items displayed at the counter",
+    "category": "Bakery"
+  },
+  {
+    "id": 10,
+    "src": "/images/gallery/cream-rolls.jpg",
+    "alt": "Freshly baked cream rolls with flaky pastry",
+    "category": "Bakery"
+  },
+  {
+    "id": 11,
+    "src": "/images/gallery/samosa-patties.jpg",
+    "alt": "Golden samosas and chicken patties fresh from the oven",
+    "category": "Bakery"
+  },
+  {
+    "id": 12,
+    "src": "/images/gallery/naan-tandoor.jpg",
+    "alt": "Naan being baked in the traditional tandoor oven",
+    "category": "Bakery"
+  },
+  {
+    "id": 13,
+    "src": "/images/gallery/cafe-interior.jpg",
+    "alt": "Warm interior of Nazarah Cafe with comfortable seating",
+    "category": "Cafe Vibe"
+  },
+  {
+    "id": 14,
+    "src": "/images/gallery/chai-serving.jpg",
+    "alt": "Doodh patti chai being poured into a cup",
+    "category": "Cafe Vibe"
+  },
+  {
+    "id": 15,
+    "src": "/images/gallery/biryani-plate.jpg",
+    "alt": "Steaming plate of chicken biryani with raita",
+    "category": "Cafe Vibe"
+  },
+  {
+    "id": 16,
+    "src": "/images/gallery/gift-boxes.jpg",
+    "alt": "Elegant mithai gift boxes ready for delivery",
+    "category": "Sweets"
+  }
+]
+

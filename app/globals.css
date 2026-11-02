@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FFF8EE;
+  --color-chocolate: #3B2314;
+  --color-gold: #C8913A;
+  --color-gold-dark: #A87830;
+  --color-maroon: #8C2F39;
+  --color-maroon-dark: #6E242D;
+  --color-white: #FFFFFF;
+  --color-cream-dark: #F5EBD8;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
+
+  --shadow-soft: 0 2px 15px rgba(59, 35, 20, 0.08);
+  --shadow-md: 0 4px 20px rgba(59, 35, 20, 0.12);
+  --shadow-lg: 0 8px 30px rgba(59, 35, 20, 0.15);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-chocolate);
+    background-color: var(--color-cream);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+
+  ::selection {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+  }
+}
+
