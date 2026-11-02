@@ -8,15 +8,15 @@ export function PageReloadLoader() {
   const [isFadingOut, setIsFadingOut] = useState(false);
 
   useEffect(() => {
-    // 1. Begin fade-out after the cup finishes filling (~2.4s)
+    // 1. Begin fade-out after the cup finishes filling (~1.45s)
     const fadeTimer = setTimeout(() => {
       setIsFadingOut(true);
-    }, 2450);
+    }, 1450);
 
-    // 2. Remove loader completely from DOM under 3 seconds (~2.8s total)
+    // 2. Remove loader completely from DOM under 1.9 seconds (~1.85s total)
     const removeTimer = setTimeout(() => {
       setIsLoading(false);
-    }, 2850);
+    }, 1850);
 
     return () => {
       clearTimeout(fadeTimer);

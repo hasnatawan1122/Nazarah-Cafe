@@ -179,44 +179,44 @@
   }
 }
 
-/* Animation Utility Classes (Single-shot coordinated 2.4s fill) */
+/* Animation Utility Classes (Single-shot coordinated 1.4s fill) */
 .animate-cup-appear {
-  animation: cupAppear 450ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: cupAppear 320ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .animate-coffee-rise {
-  animation: coffeeRise 2.4s cubic-bezier(0.25, 1, 0.35, 1) forwards;
+  animation: coffeeRise 1.4s cubic-bezier(0.25, 1, 0.35, 1) forwards;
   transform-origin: 120px 172px;
 }
 
 .animate-liquid-wave {
-  animation: liquidWave 1.6s ease-in-out infinite;
+  animation: liquidWave 1.2s ease-in-out infinite;
 }
 
 .animate-surface-ripple {
-  animation: surfaceRipple 2.4s cubic-bezier(0.1, 0.8, 0.2, 1) forwards;
+  animation: surfaceRipple 1.4s cubic-bezier(0.1, 0.8, 0.2, 1) forwards;
   transform-origin: 120px 82px;
 }
 
 .animate-steam-1 {
-  animation: steamRise1 2.4s ease-out forwards;
+  animation: steamRise1 1.4s ease-out forwards;
   transform-origin: 104px 74px;
 }
 
 .animate-steam-2 {
-  animation: steamRise2 2.4s ease-out forwards;
+  animation: steamRise2 1.4s ease-out forwards;
   transform-origin: 120px 70px;
 }
 
 .animate-steam-3 {
-  animation: steamRise3 2.4s ease-out forwards;
+  animation: steamRise3 1.4s ease-out forwards;
   transform-origin: 136px 74px;
 }
 
-/* Text appears from left to right after 0.5s */
+/* Text appears smoothly from left to right */
 .animate-text-slide-left {
   opacity: 0;
-  animation: textSlideLeftToRight 750ms cubic-bezier(0.16, 1, 0.3, 1) 500ms forwards;
+  animation: textSlideLeftToRight 550ms cubic-bezier(0.16, 1, 0.3, 1) 350ms forwards;
 }
 
 .animate-fadeIn {
