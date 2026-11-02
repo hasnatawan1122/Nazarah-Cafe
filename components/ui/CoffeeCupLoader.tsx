@@ -30,7 +30,7 @@ interface CoffeeCupLoaderProps {
 export function CoffeeCupLoader({
   fullScreen = false,
   title = "Tohfa Sweets & Nazarah Cafe",
-  subtext = "Karkhana Bazar, Vehari",
+  subtext,
   size = "md",
   className = "",
 }: CoffeeCupLoaderProps) {
@@ -56,7 +56,7 @@ export function CoffeeCupLoader({
     <div
       role="status"
       aria-live="polite"
-      aria-label={`${title} ${subtext}`}
+      aria-label={subtext ? `${title} ${subtext}` : title}
       className={`flex flex-col items-center justify-center p-6 text-center select-none ${className}`}
     >
       {/* Container for the SVG Coffee Cup */}

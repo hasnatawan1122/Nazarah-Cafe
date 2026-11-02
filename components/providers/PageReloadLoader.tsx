@@ -38,7 +38,6 @@ export function PageReloadLoader() {
       <CoffeeCupLoader
         fullScreen={false}
         title="Tohfa Sweets & Nazarah Cafe"
-        subtext="Karkhana Bazar, Vehari"
         size="md"
       />
     </div>
