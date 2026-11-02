@@ -11,6 +11,11 @@ import {
   ChevronRight,
   HeartHandshake,
   MessageCircle,
+  Cake,
+  Croissant,
+  Flame,
+  Coffee,
+  Gift,
 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -30,42 +35,42 @@ export default function HomePage() {
     {
       title: "Traditional Mithai",
       desc: "Gulab jamun, desi ghee jalebi, kaju barfi & authentic sohan halwa made with pure milk & khoya.",
-      icon: "🍬",
-      href: "/menu?category=Mithai",
+      icon: Sparkles,
+      href: "/menu?category=Traditional Mithai",
       badge: "Pure Desi Ghee",
     },
     {
       title: "Artisan Cakes",
       desc: "Chocolate truffle, red velvet, fresh pineapple, and customized event celebration cakes.",
-      icon: "🎂",
-      href: "/menu?category=Cakes",
+      icon: Cake,
+      href: "/menu?category=Artisan Cakes",
       badge: "Fresh Daily",
     },
     {
       title: "Bakery Items",
       desc: "Golden chicken patties, crispy cream rolls, samosas, pizza breads, and classic morning rusks.",
-      icon: "🥐",
+      icon: Croissant,
       href: "/menu?category=Bakery Items",
       badge: "Baked 6 AM",
     },
     {
       title: "Fresh Tandoor Bread",
       desc: "Piping hot tandoori naan, sesame roghni naan, and crispy stuffed kulchas straight from the clay coals.",
-      icon: "🫓",
-      href: "/menu?category=Fresh Bread",
+      icon: Flame,
+      href: "/menu",
       badge: "Clay Tandoor",
     },
     {
       title: "Nazarah Cafe Food",
       desc: "Gourmet burgers, stone-baked pizzas, Chinese chowmein, Alfredo pasta, and tiered high-tea platters.",
-      icon: "☕",
-      href: "/menu?category=Fast Food & Pizza",
+      icon: Coffee,
+      href: "/menu?category=Fast Food",
       badge: "Dine-In & Platter",
     },
     {
       title: "Custom Gift Boxes",
       desc: "Royal velvet packaging for weddings, Eid, and joyful family celebrations in Vehari and beyond.",
-      icon: "🎁",
+      icon: Gift,
       href: "/menu?category=Gift Boxes",
       badge: "Custom Packaging",
     },
@@ -178,33 +183,38 @@ export default function HomePage() {
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {specialties.map((item, idx) => (
-              <Card key={idx} className="flex flex-col justify-between group">
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-4xl">{item.icon}</span>
-                    <span className="rounded-full bg-cream-dark px-3 py-1 text-[11px] font-semibold text-maroon border border-gold/30">
-                      {item.badge}
-                    </span>
+            {specialties.map((item, idx) => {
+              const IconComp = item.icon;
+              return (
+                <Card key={idx} className="flex flex-col justify-between group">
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/15 text-gold-dark border border-gold/30 shadow-2xs group-hover:bg-gold group-hover:text-white transition-all duration-300">
+                        <IconComp className="h-6 w-6" />
+                      </div>
+                      <span className="rounded-full bg-cream-dark px-3 py-1 text-[11px] font-semibold text-maroon border border-gold/30">
+                        {item.badge}
+                      </span>
+                    </div>
+                    <h3 className="font-heading text-xl font-bold text-chocolate group-hover:text-gold transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-chocolate/75 font-body leading-relaxed">
+                      {item.desc}
+                    </p>
                   </div>
-                  <h3 className="font-heading text-xl font-bold text-chocolate group-hover:text-gold transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-chocolate/75 font-body leading-relaxed">
-                    {item.desc}
-                  </p>
-                </div>
-                <div className="mt-6 pt-4 border-t border-[#F0E4D4]">
-                  <Link
-                    href={item.href}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-gold-dark hover:text-chocolate uppercase tracking-wider transition-colors"
-                  >
-                    <span>Explore Section</span>
-                    <ChevronRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </div>
-              </Card>
-            ))}
+                  <div className="mt-6 pt-4 border-t border-[#F0E4D4]">
+                    <Link
+                      href={item.href}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-gold-dark hover:text-chocolate uppercase tracking-wider transition-colors"
+                    >
+                      <span>Explore Section</span>
+                      <ChevronRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+                    </Link>
+                  </div>
+                </Card>
+              );
+            })}
           </div>
         </Container>
       </section>

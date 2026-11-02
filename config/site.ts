@@ -19,6 +19,10 @@ export const siteConfig = {
   },
   rating: 3.5,
   reviewCount: 85,
+  developer: {
+    name: "Hasnat",
+    linkedin: process.env.NEXT_PUBLIC_DEVELOPER_LINKEDIN || "https://www.linkedin.com/in/abu-ul-hasnat/",
+  },
 } as const;
 
 export type SiteConfig = typeof siteConfig;

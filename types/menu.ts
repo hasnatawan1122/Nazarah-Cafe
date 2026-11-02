@@ -26,3 +26,4 @@ export interface RamadanCategoryGroup {
   name: string;
   items: string[];
 }
+

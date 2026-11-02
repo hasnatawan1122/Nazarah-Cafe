@@ -35,3 +35,4 @@ export function MenuEmptyState({ onReset, query }: MenuEmptyStateProps) {
     </div>
   );
 }
+
